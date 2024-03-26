@@ -1,6 +1,0 @@
-# requirements.txt
-
-# If LIWC is available on PyPI with a specific package name:
-liwc-lib>=1.0.0
-
-

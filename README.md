@@ -8,5 +8,5 @@ quantidade de palavras
 
 Quando for começar a fazer, roda esse script
 ```
-pip install -r requirements.txt
+pip install liwc
 ``
