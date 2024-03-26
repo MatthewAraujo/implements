@@ -4,3 +4,9 @@ a. Quantas palavras ofensivas (swear) existem no texto
 b. Quantas palavras de ansiedade (anx) existem no texto
 3. Qual é o tom geral do texto: positivo (posemo) ou negativo (negemo) em relação a
 quantidade de palavras
+
+
+Quando for começar a fazer, roda esse script
+```
+pip install -r requirements.txt
+``

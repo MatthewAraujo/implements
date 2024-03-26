@@ -1,0 +1,8 @@
+# requirements.txt
+
+# If LIWC is available on PyPI with a specific package name:
+liwc-lib>=1.0.0
+
+# If LIWC is available from a specific GitHub repository:
+git+https://github.com/example/liwc-lib.git@v1.0.0
+
