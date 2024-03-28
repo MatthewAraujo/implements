@@ -27,6 +27,7 @@ print(f"Text tokens: {tokens}")
 manipulator = SpecialTokenManipulator(tokens)
 tokens = manipulator.get_analyzed_tokens()
 print(f"Analyzed Tokens: {tokens}")
+print(f"Special tokens: {manipulator.get_special_tokens()}")
 manipulator.set_tokens(tokens)
 
 # Filtro pelas categorias que eu desejo
