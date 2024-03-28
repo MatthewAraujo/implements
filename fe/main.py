@@ -58,7 +58,7 @@ def openFile(path_file):
 
 def main(path_file):
   text = openFile(path_file)
-  cleaned_text = stringCleaner(text)
+  cleaned_text = stringCleaner(text.read())
   lower_text = stringLower(cleaned_text)
   tokens = stringReader(lower_text)
   tokens = tokenManipulator(tokens)
@@ -66,7 +66,7 @@ def main(path_file):
   negemoCount = (category_counter(tokens, "negemo") / len(tokens) ) * 100 
   swearCount = category_counter(tokens, "swear")
   anxCount = category_counter(tokens, "anx")
-  print(f"Saida : {len(tokens)} palavras,{swearCount} palavras ofensivas ,{anxCount} palavras de ansiedade, tom geralk positivo: {posemoCount:.2f}%, tom geral negativo: {negemoCount:.2f}%")
+  print(f"Saida : {len(tokens)} palavras,{swearCount} palavras ofensivas ,{anxCount} palavras de ansiedade, tom geral positivo: {posemoCount:.2f}%, tom geral negativo: {negemoCount:.2f}%")
 
 
 if __name__ == "__main__":
