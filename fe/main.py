@@ -6,7 +6,8 @@ from utils import liwc_analyze
 # append, join e length. Todo o resto (modificações, remoções) deve ser feito com
 # loops.
 # ● Organize suas funções como quiser.
-# ● Organize seus dados como quiser.
+# ● Organize seus dados como quiser.jc
+
 
 def stringCleaner(text):
   special_words = [33, 34, 35, 36, 37, 38, 42, 43, 45, 47, 58, 59, 60, 61, 62, 63, 64, 91, 92, 93, 94, 95, 96, 123, 124, 125, 126, 199]
@@ -54,11 +55,11 @@ def category_counter(tokens, category):
 
 def openFile(path_file):
   return open(path_file, "r", encoding="utf8")
-  
+
 
 def main(path_file):
   text = openFile(path_file)
-  cleaned_text = stringCleaner(text)
+  cleaned_text = stringCleaner(text.read())
   lower_text = stringLower(cleaned_text)
   tokens = stringReader(lower_text)
   tokens = tokenManipulator(tokens)
@@ -70,5 +71,6 @@ def main(path_file):
 
 
 if __name__ == "__main__":
-  main("./texto2.txt")
+  main("./fe/texto")
+
   
