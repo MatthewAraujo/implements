@@ -22,5 +22,4 @@ class StringReader:
 
     def get_cleaned_token(self):
         cleaned_text = self.to_lower_case(self.text)
-        #cleaned_text = re.sub(r'[^a-zA-Z0-9\s]', '', cleaned_text) # remover isso e implementar na specialTokenManipulator
         return self.tokenize(cleaned_text)
